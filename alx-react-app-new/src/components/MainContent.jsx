@@ -6,7 +6,7 @@ function MainContent() {
         backgroundColor: '#f4f4f4'
       }}
     >
-      <p>Welcome to the main content area.</p>
+      <p>I love to visit New York, Paris, and Tokyo..</p>
     </main>
   );
 }
