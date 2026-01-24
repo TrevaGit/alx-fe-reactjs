@@ -9,7 +9,9 @@ const RecipeList = () => {
       {recipes.length === 0 && <p>No recipes added yet.</p>}
       {recipes.map((recipe) => (
         <div key={recipe.id}>
-          <h3>{recipe.title}</h3>
+         <a href={`/recipes/${recipe.id}`}>
+  <h3>{recipe.title}</h3>
+</a>
           <p>{recipe.description}</p>
         </div>
       ))}
