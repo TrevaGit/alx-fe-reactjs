@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Optional: basic global styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
