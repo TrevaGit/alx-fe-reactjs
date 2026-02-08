@@ -1,29 +1,38 @@
-2. Responsive Design Implementation Using Tailwind CSS
-mandatory
-Objective: Enhance the UserProfile component to be responsive and adaptable to different device sizes using Tailwind CSS’s responsive utilities.
+function UserProfile() {
+  return (
+    <div className="
+      bg-gray-100 
+      p-4 md:p-8 
+      max-w-xs md:max-w-sm 
+      mx-auto my-20 
+      rounded-lg shadow-lg 
+      text-center
+    ">
+      <img
+        src="https://via.placeholder.com/150"
+        alt="User"
+        className="
+          w-24 h-24 
+          md:w-36 md:h-36 
+          rounded-full 
+          mx-auto
+        "
+      />
+      <h1 className="
+        text-lg md:text-xl 
+        text-blue-800 
+        my-4
+      ">
+        John Doe
+      </h1>
+      <p className="
+        text-sm md:text-base 
+        text-gray-600
+      ">
+        Developer at Example Co. Loves to write code and explore new technologies.
+      </p>
+    </div>
+  );
+}
 
-Task Description:
-Building on the previous task, this step involves adjusting the UserProfile component to ensure it displays attractively across various screen sizes. Use Tailwind CSS’s responsive utilities to make the component’s layout and typography adjust dynamically based on the viewport size.
-
-Instructions for Responsive Styling:
-Responsive Container Adjustments:
-
-Ensure the container maintains comfortable margins and padding on smaller screens but utilizes more space on larger screens.
-Example modifications:
-Padding should be smaller on smaller devices (p-4 on sm: screens and p-8 on md: screens and above).
-The maximum width should adapt to screen size (use max-w-xs on small screens and max-w-sm on medium screens and above).
-Responsive Typography:
-
-Adjust the font size of the heading and paragraph text to increase readability on different devices.
-Example modifications:
-The heading should be slightly smaller on smaller devices (text-lg on sm: screens and text-xl on md: screens and above).
-The paragraph text should maintain readability without overwhelming smaller screens (text-sm on sm: screens and text-base on md: screens and above).
-Responsive Image Sizing:
-
-The image should scale appropriately across devices to ensure it does not dominate the layout on smaller screens but remains visible.
-Example modifications:
-Use w-24 h-24 on sm: screens and w-36 h-36 on md: screens and above for the profile image.
-Repo:
-
-GitHub repository: alx-fe-reactjs
-Directory: tailwind-react-integration
+export default UserProfile;
