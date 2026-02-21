@@ -5,6 +5,7 @@ import Profile from "./components/Profile";
 import ProfileDetails from "./components/ProfileDetails";
 import ProfileSettings from "./components/ProfileSettings";
 import ProtectedRoute from "./components/ProtectedRoute";
+import BlogPost from "./components/BlogPost"; // <-- import BlogPost
 
 function App() {
   return (
@@ -24,8 +25,8 @@ function App() {
           <Route path="settings" element={<ProfileSettings />} />
         </Route>
 
-        {/* Dynamic route example */}
-        <Route path="/profile/:username" element={<ProfileDetails />} />
+        {/* Dynamic blog post route */}
+        <Route path="/blog/:id" element={<BlogPost />} />
       </Routes>
     </BrowserRouter>
   );
