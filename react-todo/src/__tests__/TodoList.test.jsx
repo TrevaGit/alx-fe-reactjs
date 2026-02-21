@@ -30,4 +30,3 @@ describe("TodoList Component", () => {
     fireEvent.click(deleteButton);
     expect(screen.queryByText("Learn React")).not.toBeInTheDocument();
   });
-});
